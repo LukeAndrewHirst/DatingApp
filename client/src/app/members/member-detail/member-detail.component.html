@@ -18,7 +18,7 @@
                     <strong>Member Since:</strong>
                     <p>{{member.created | date: 'dd MMMM yyyy'}}</p>
                 </div>
-                <div>
+                <div *ngIf="!(presence.onlineUsers$ | async).includes(member.username)">
                     <strong>Last Active:</strong>
                     <p>{{member.lastActive | timeago}}</p>
                 </div>

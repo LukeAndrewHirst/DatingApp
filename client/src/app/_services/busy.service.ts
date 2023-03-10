@@ -12,7 +12,6 @@ export class BusyService {
   busy(){
     this.busyRequestCount++;
     this.spinnerService.show(undefined, {
-      type: 'line-scale-party'
     })
   }
 

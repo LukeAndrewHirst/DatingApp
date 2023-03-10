@@ -17,7 +17,7 @@
                     <strong>Location:</strong>
                     <p>{{member.country}} - {{member.city}}</p>
                 </div>
-                <div>
+                <div >
                     <strong>Age:</strong>
                     <p>{{member.age}}</p>
                 </div>
@@ -25,7 +25,7 @@
                     <strong>Member Since:</strong>
                     <p>{{member.created | date: 'dd MMMM yyyy'}}</p>
                 </div>
-                <div>
+                <div *ngIf="this.user.username != member.username">
                     <strong>Last Active:</strong>
                     <p>{{member.lastActive | timeago}}</p>
                 </div>
