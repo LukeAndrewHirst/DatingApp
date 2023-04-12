@@ -4,7 +4,7 @@ namespace API.Entities
 {
     public class AppUser : IdentityUser<int>
     {
-        public DateTime DateOfBirth { get; set; }
+        public DateOnly DateOfBirth { get; set; }
 
         public string KnownAs { get; set; }
 
